@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "description": "A UI Toolkit for Frontend Development",
   "main": "index.js",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.9"
+    "gulp": "^3.8.9",
+    "require-dir": "^0.1.0"
   },
   "scripts": {
     "test": "test"
