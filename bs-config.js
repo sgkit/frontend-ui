@@ -14,7 +14,7 @@
  |
  */
 module.exports = {
-    "files": ["**/*.html","css/*.css","js/*.js","img/**.*"],
+    "files": ["**/*.html","styles/*.styles","js/*.js","img/**.*"],
     "server": "./src/",
     "proxy": false,
     "port": 3000,
