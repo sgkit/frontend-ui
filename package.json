@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.9",
+    "gulp-util": "^3.0.1",
     "require-dir": "^0.1.0"
   },
   "scripts": {
