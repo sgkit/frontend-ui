@@ -6,6 +6,11 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.9",
+    "gulp-file-include": "^0.5.1",
+    "gulp-htmlincluder": "^0.1.0",
+    "gulp-prompt": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-util": "^3.0.1",
     "require-dir": "^0.1.0"
   },
   "scripts": {
