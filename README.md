@@ -1,6 +1,6 @@
-#FOLUKE (fo-lu-ke) 
+#FOLUKE (fo-lu-keH) 
 
-A simple but feature packed UI starter-kit for frontend development.
+A simple but feature packed UI starter-kit for frontend development, it is a toolkit for making life as a frontend developer a bit easier. It contains UI Elements, Web-Components (Polymer / Angular),  
 
 ##Features
 
