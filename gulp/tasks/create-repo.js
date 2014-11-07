@@ -2,14 +2,14 @@
 //Goto the config file and create your settings
 
 var gulp = require("gulp"),
-    util = require("gulp-util");
-var config = require('gulp/config.json');
+    util = require("gulp-util"),
+    git = require('gulp-git');
+var config = require('../config.json').repo;
 
 
 gulp.task("create-repo", function () {
 
-    util.log(config.src);
+    util.log(config.test);
     util.beep();
 
 });
-src

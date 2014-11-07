@@ -1,5 +1,5 @@
 //converts your layouts to full html pages - all your layout task
-var config = require("../config.js");
+var config = require("../config.json").layouts;
 var gulp = require('gulp'),
     util = require('gulp-util'),
     notify = require('gulp-notify'),
@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('layout-watch', function () {
-    gulp.watch(['src/layouts/**.html', 'src/inc/**.html'], ['layout']);
+    gulp.watch([config.dir + '**.html', config.dir + '**.html'], ['layout']);
 
 });
 
