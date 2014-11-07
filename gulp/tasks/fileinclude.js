@@ -5,16 +5,15 @@
 //  })
 
 var gulp = require('gulp'),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+    print = require('gulp-print');
 
+gulp.task('fileinclude', function () {
 
-
-gulp.task('fileinclude', function() {
-
-    gulp.src('./src/**.html')
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('./src/'));
+    gulp.src('./src/layouts/**.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('./src/'));
 });
