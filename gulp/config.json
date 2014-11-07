@@ -11,6 +11,15 @@
     "repo": {
         "url": "",
         "user": ""
+    },
+    "browserSync": {
+        "baseDir" : "./src",
+        "indexPage" : "index.html",
+        "files" : ["**/*.html","inc/**.html"],
+        "proxy" : "",
+        "port" : "8000",
+        "logLevel": "debug",
+        "timestamp": true
     }
 
 }
