@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('layout-watch', function () {
-    gulp.watch([config.dir + '**.html', config.dir + '**.html'], ['layout']);
+    gulp.watch([config.dir + '**.html', config.inc_dir + '**/*.html'], ['layout']);
 
 });
 
