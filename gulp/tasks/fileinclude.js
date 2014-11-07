@@ -9,12 +9,12 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('fileinclude', function() {
+gulp.task('fileinclude', function () {
 
-    gulp.src('./src/**.html')
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('./src/'));
+    gulp.src('./src/layouts/**.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('./src/'));
 });
