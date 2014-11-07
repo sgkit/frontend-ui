@@ -5,9 +5,8 @@
 //  })
 
 var gulp = require('gulp'),
-    fileinclude = require('gulp-file-include');
-
-
+    fileinclude = require('gulp-file-include'),
+    print = require('gulp-print');
 
 gulp.task('fileinclude', function () {
 
