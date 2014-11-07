@@ -1,14 +1,37 @@
-#FRONTEND UI
+#FOLUKE (fo-lu-ke) 
 
-A simple but feature packed UI starter-kit for frontend dev
+A simple but feature packed UI starter-kit for frontend development.
 
 ##Features
+
+Automate Task
+
+Quicky complete several of your everyday task (minification, compilation, livereload, testing) by using a set of simple but powergu pre-packaged gulp task.
+
+##Requirements
+
+* Node JS
+* Gulpjs
+* Bower
+* LESS
+* Browser-Sync
+
+Optional
+
+* Grunt
+
 
 ##Quick Start.
 
 Getting started
 
+* Clone the repo https://github.com/sgkit/frontend-ui.git 
+* Run npm install
+* Run npm bower install
+* Start server with live reload :- browser-sync start --config bs-config.js 
+
 ###Docs
+
 
 ###License
 
