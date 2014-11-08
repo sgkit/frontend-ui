@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 gulp.task('include_layouts', function () {
 
-    gulp.src(config.src + '**/*.html')
+    gulp.src(config.src + '**/*.html', {base: config.src})
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -16,7 +16,7 @@ gulp.task('include_layouts', function () {
 });
 
 gulp.task('layout-watch', function () {
-    gulp.watch([config.src + '**.html', config.dir + '**.html'], ['layout']);
+    gulp.watch([config.src + '**/*.html', config.dir + '**/*.html'], ['layout']);
 
 });
 
