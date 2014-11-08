@@ -3,19 +3,26 @@ var config = require("../config.json").layouts;
 var gulp = require('gulp'),
     util = require('gulp-util'),
     notify = require('gulp-notify'),
-    watch = require('watchify');
+    fileinclude = require('gulp-file-include');
 
+gulp.task('include_layouts', function () {
 
-
+    gulp.src(config.src + '**/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest(config.dest));
+});
 
 gulp.task('layout-watch', function () {
-    gulp.watch([config.dir + '**.html', config.dir + '**.html'], ['layout']);
+    gulp.watch([config.src + '**.html', config.dir + '**.html'], ['layout']);
 
 });
 
-gulp.task('layout', ["fileinclude"], function () {
+gulp.task('layout', ["include_layouts"], function () {
 
-    gulp.src("src/index.html")
+    gulp.src(config.src + "/index.html")
         .pipe(notify("Your layout files have been generated"));
 
 });

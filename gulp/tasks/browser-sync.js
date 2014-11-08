@@ -6,7 +6,7 @@ var config = require('../config.json').browserSync,
 
 
 
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', ["layout-watch"], function () {
     
     browsersync({
       server: {

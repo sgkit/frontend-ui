@@ -1,16 +1,19 @@
 {
-    "src": "./app/",
+    "src": "./src/",
     "build": "deploy/",
     "startpage": "index.html",
     "server_port": "4000",
     "dev_server_port": "4800",
     "live_reload_port": "35729",
     "layouts": {
-        "dir": "src/layouts/"
+        "src": "src/layouts/",
+        "dest": "./src/",
+        "notification": true
     },
     "repo": {
         "url": "",
-        "user": ""
+        "user": "",
+        "password": ""
     },
     "browserSync": {
         "baseDir" : "./src",
