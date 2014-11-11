@@ -1,14 +1,16 @@
-{
+{  
+    "version": "0.03",
+    "app": {
     "src": "./src/",
     "build": "deploy/",
-    "startpage": "index.html",
-    "server_port": "4000",
-    "dev_server_port": "4800",
-    "live_reload_port": "35729",
+    "startpage": "index.html"
+},
     "layouts": {
         "src": "src/layouts/",
         "dest": "./src/",
-        "notification": true
+        "notification": true,
+        "inc": "/inc",
+        "apps": "../app/"
     },
     "repo": {
         "url": "",
@@ -23,6 +25,11 @@
         "port" : "8000",
         "logLevel": "debug",
         "timestamp": true
-    }
-
+    },
+    "bower": {
+    "install_dir": "package/"
+    
+}
+    
+    
 }
