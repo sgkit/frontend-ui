@@ -1,10 +1,10 @@
-{  
+{
     "version": "0.03",
     "app": {
-    "src": "./src/",
-    "build": "deploy/",
-    "startpage": "index.html"
-},
+        "src": "./src/",
+        "build": "deploy/",
+        "startpage": "index.html"
+    },
     "layouts": {
         "src": "src/layouts/",
         "dest": "./src/",
@@ -18,18 +18,18 @@
         "password": ""
     },
     "browserSync": {
-        "baseDir" : "./src",
-        "indexPage" : "index.html",
-        "files" : ["**/*.html","inc/**.html"],
-        "proxy" : "",
-        "port" : "8000",
+        "baseDir": "./src",
+        "indexPage": "index.html",
+        "files": ["**/*.html", "inc/**.html"],
+        "proxy": "",
+        "port": "8000",
         "logLevel": "debug",
         "timestamp": true
     },
     "bower": {
-    "install_dir": "package/"
-    
-}
-    
-    
+        "install_dir": "package/"
+
+    }
+
+
 }

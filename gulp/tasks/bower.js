@@ -1,6 +1,7 @@
 /**
  * bower task
  */
+
 var config = require("../config.json"),
     gulp = require("gulp"),
     util = require("gulp-util"),
