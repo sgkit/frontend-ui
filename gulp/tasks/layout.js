@@ -1,5 +1,5 @@
 //converts your layouts to full html pages - all your layout task
-var config = require("../config.json").layouts;
+var config = require('../config.json').layouts;
 var gulp = require('gulp'),
     util = require('gulp-util'),
     notify = require('gulp-notify'),
@@ -7,7 +7,9 @@ var gulp = require('gulp'),
 
 gulp.task('include_layouts', function () {
 
-    gulp.src(config.src + '**/*.html', {base: config.src})
+    gulp.src(config.src + config.srcFiles, {
+        base: config.src
+    })
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -20,9 +22,8 @@ gulp.task('layout-watch', function () {
 
 });
 
-gulp.task('layout', ["include_layouts"], function () {
+gulp.task('layout', ['include_layouts'], function () {
 
-    gulp.src(config.src + "/index.html")
-        .pipe(notify("Your layout files have been generated"));
-
+    gulp.src(config.src + '/index.html')
+        .pipe(notify('Your layout files have been generated'));
 });
