@@ -1,6 +1,6 @@
-#FOLUKE (fo-lu-ke) 
+#FOLUKE (fo-lu-Keh) 
 
-A simple but feature packed UI starter-kit for frontend development.
+A simple, flexible and feature packed UI toolkit for frontend development -- manage, develop, build and deploy modern webapplication across multiple platforms with ease.  
 
 ##Features
 
@@ -28,7 +28,7 @@ Getting started
 * Clone the repo https://github.com/sgkit/frontend-ui.git 
 * Run npm install
 * Run npm bower install
-* Start server with live reload :- browser-sync start --config bs-config.js 
+* Start server with live reload :- `gulp browser-sync` or from terminal `start --config bs-config.js` 
 
 ###Docs
 
