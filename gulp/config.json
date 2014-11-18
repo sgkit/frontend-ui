@@ -1,4 +1,5 @@
 {
+
     "version": "0.03",
     "app": {
         "src": "./src/",
@@ -7,10 +8,10 @@
     },
     "layouts": {
         "src": "src/layouts/",
-        "srcFiles": ["**.html","admin/**.html"],
+        "srcFiles": ["./src/layouts/**.html","./src/layouts/admin/**/*.html"],
         "dest": "./src/",
         "notification": true,
-        "inc": "/inc",
+        "inc": "src/layouts/inc/*.html",
         "apps": "../app/"
     },
     "repo": {

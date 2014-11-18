@@ -5,25 +5,27 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     fileinclude = require('gulp-file-include');
 
+
 gulp.task('include_layouts', function () {
 
-    gulp.src(config.src + config.srcFiles, {
+    gulp.src( config.srcFiles, {
         base: config.src
     })
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
         }))
+      .pipe(notify('Your layout files have been generated'))
         .pipe(gulp.dest(config.dest));
 });
 
-gulp.task('layout-watch', function () {
-    gulp.watch([config.src + '**/*.html', config.dir + '**/*.html'], ['layout']);
+gulp.task('layout:watch', ['browser-sync'], function () {
+    gulp.watch([config.srcFiles, config.inc], ['include_layouts'])
 
 });
 
-gulp.task('layout', ['include_layouts'], function () {
+gulp.task('layout', ['include_layouts','browser-sync'], function () {
 
     gulp.src(config.src + '/index.html')
-        .pipe(notify('Your layout files have been generated'));
+        .pipe(notify('Watching your layout files'));
 });

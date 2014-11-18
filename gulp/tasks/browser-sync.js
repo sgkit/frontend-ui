@@ -6,8 +6,8 @@ var config = require('../config.json').browserSync,
 
 
 
-gulp.task('browser-sync', ["layout-watch"], function () {
-    
+gulp.task('browser-sync', function () {
+
     browsersync({
       server: {
         baseDir: config.baseDir,
@@ -15,7 +15,7 @@ gulp.task('browser-sync', ["layout-watch"], function () {
     },
     files: [config.files],
     logLevel: config.logLevel,
-    timestamp: config.timestamp  
+    timestamp: config.timestamp
     })
-    
+
 })
