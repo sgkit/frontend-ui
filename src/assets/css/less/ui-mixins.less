@@ -1,0 +1,119 @@
+//************** Shawn Sandy - created 09/04/2014 ******************/
+@import "../../../package/bootstrap/less/variables";
+@import (reference) "../../../package/bootstrap/less/bootstrap.less";
+//@import "../../../bower_components/bootstrap/less/grid";
+@import "theme-variables";
+
+.sections() {
+
+  p, aside, label {
+
+    margin-bottom: @margins;
+  }
+
+  section&, header&, footer&, main& {
+
+    div {
+
+      //.container-fixed();
+
+      &.contain {
+
+        //.container-fixed();
+
+        @media (min-width: @screen-sm-min) {
+          width: @container-sm;
+        }
+        @media (min-width: @screen-md-min) {
+          width: @container-md;
+        }
+        @media (min-width: @screen-lg-min) {
+          width: @container-lg;
+        }
+
+      }
+
+    }
+
+  }
+  .row {
+
+    &:extend(.row all);
+
+  }
+
+}
+
+//article { @extend .col-lg-9; }
+
+.blog() {
+
+  .blog {
+    .post {
+      .cols(8);
+      &.single.page {
+        .cols(12)
+      }
+    }
+    .sidebar {
+      .cols(4);
+    }
+  }
+
+}
+
+.cols(@desktop, @tablet:12, @phone:12) {
+  .make-xs-column(@phone);
+  .make-sm-column(@tablet);
+  .make-md-column(@desktop);
+  .make-lg-column(@desktop);
+}
+
+//bootstrap-ui semantic column
+
+.semantic-columns(@name, @col) {
+
+  .@{name} {
+    &.blocks {
+      > aside, > ul > li, > div {
+        .cols(@col, @col, @col);
+      }
+    }
+  }
+
+}
+
+.column-width(@name,@width) {
+  //make-row();
+  .cols.wide, .cw {
+
+    .@{name} {
+      .cols(@width, 12, 12);
+    }
+
+  }
+
+}
+
+.position-vertically() {
+
+  .position.middle {
+    display: table;
+    height: inherit !important;
+    width: 100%;
+
+    > div, > aside, > li {
+      display: table-cell;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+  }
+
+}
+
+
+
+
+
+
