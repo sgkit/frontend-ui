@@ -1,4 +1,4 @@
-#UI
+#APPS
+-----
 
-
-***User Interface Components***
+This is where the core of our application goes
