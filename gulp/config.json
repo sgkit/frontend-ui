@@ -9,10 +9,7 @@
     "src": "src/layouts/",
     "srcFiles": [
       "./src/layouts/**.html",
-      "./src/layouts/admin/**/*.html",
-      "./src/ui/components/**/*.html",
-      "./src/ui/elements/**/*.html",
-      "./src/ui/assets/css/**/*.css"
+      "./src/layouts/admin/**/*.html"
     ],
     "dest": "./src/",
     "notification": true,
@@ -29,7 +26,10 @@
     "indexPage": "index.html",
     "files": [
       "**/*.html",
-      "inc/**.html"
+      "inc/**.html",
+      "./src/ui/components/**/*.html",
+      "./src/ui/elements/**/*.html",
+      "./src/ui/assets/css/**/*.css"
     ],
     "proxy": "",
     "port": "8000",
