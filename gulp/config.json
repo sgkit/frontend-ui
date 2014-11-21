@@ -23,13 +23,12 @@
   },
   "browserSync": {
     "baseDir": "./src",
-    "indexPage": "index.html",
     "files": [
       "./src/*.html",
       "./src/inc/**.html",
       "./src/ui/components/**/*.html",
       "./src/ui/elements/**/*.html",
-      "./src/ui/assets/css/**/*.css"
+      "./src/assets/**/*.css"
     ],
     "proxy": "",
     "port": "8000",
