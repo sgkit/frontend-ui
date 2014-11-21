@@ -8,7 +8,7 @@
   "layouts": {
     "src": "src/layouts/",
     "srcFiles": [
-      "./src/layouts/**.html",
+      "./src/layouts/*.html",
       "./src/layouts/admin/**/*.html"
     ],
     "dest": "./src/",
