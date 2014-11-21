@@ -13,13 +13,7 @@ gulp.task('browser-sync', function () {
       server: {
         baseDir: config.baseDir
     },
-    files: [
-      "./*.html",
-      "./inc/**.html",
-      "./ui/components/**/*.html",
-      "./ui/elements/**/*.html",
-      "./assets/**/*.css"
-    ],
+    files: [config.files],
     timestamp: config.timestamp
     })
 
