@@ -8,8 +8,8 @@
   "layouts": {
     "src": "src/layouts/",
     "srcFiles": [
-      "./src/layouts/*.html",
-      "./src/layouts/admin/**/*.html"
+      "src/layouts/*.html",
+      "src/layouts/admin/**/*.html"
     ],
     "dest": "./src/",
     "notification": true,
@@ -25,8 +25,8 @@
     "baseDir": "./src",
     "indexPage": "index.html",
     "files": [
-      "**/*.html",
-      "inc/**.html",
+      "./src/*.html",
+      "./src/inc/**.html",
       "./src/ui/components/**/*.html",
       "./src/ui/elements/**/*.html",
       "./src/ui/assets/css/**/*.css"

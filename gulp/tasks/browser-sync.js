@@ -3,13 +3,13 @@
 var config = require('../config.json').browserSync,
     gulp = require('gulp'),
   notify = require('gulp-notify'),
-    browsersync = require('browser-sync');
+    browserSync = require('browser-sync');
 
 
 
-gulp.task('browser-sync', ['sync-notify'], function () {
+gulp.task('browser-sync', function () {
 
-    browsersync({
+    browserSync({
       server: {
         baseDir: config.baseDir,
         index: config.indexPage
@@ -21,7 +21,11 @@ gulp.task('browser-sync', ['sync-notify'], function () {
 
 })
 
-gulp.task('sync-notify',function(){
-  gulp.src(config.baseDir + 'index.html')
+gulp.task('browser-sync:notify',function(){
+  gulp.src(config.baseDir + '/index.html')
     .pipe(notify('BROWSER-SYNC : Reloading browser(s)'));
 })
+
+gulp.task('browser-sync:reload', function () {
+  browserSync.reload();
+});

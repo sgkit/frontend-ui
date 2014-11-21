@@ -1,6 +1,5 @@
 .idea
 node_modules
-/src/package/**/*.*
-/src/.DS_Store
-/deploy
-/src/ui/components/package/
+src/package/**/*.*
+deploy
+src/ui/components/package
