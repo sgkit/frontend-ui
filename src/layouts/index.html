@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html class="no-js">
-
 <head>
-    <!--inc header.html-->
-    @@include('./inc/header.html', {"body-class" : "home"})
+  <!--inc header.html -->
+  @@include('inc/header.html', {"body-class" : "home"})
+  @@include('inc/header-polymer.html')
+  <!--end -->
 </head>
+<body class="@@body-class">
+<div id="ui">
+  <section class="bootui">
+    <div class="contain">
+      <h1>Welcome</h1>
 
-<body>
-
-<<<<<<< HEAD
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1>FLOUKE UI Kit!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-        </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ut nam quaerat assumenda id temporibus,
+        reiciendis cupiditate laborum qui fugit soluta animi ratione ducimus, modi vel repellat fugiat fuga magni
+        nostrum? Quibusdam est quisquam distinctio optio, eum recusandae quidem quas natus nobis quam consectetur a
+        nihil possimus, ipsum odio molestias ad earum rerum odit, velit consequuntur. Repellat, nostrum ex eius.
+      </p>
+      <page-cover></page-cover>
     </div>
+  </section>
 </div>
-=======
-    <!-- Add your site or application content here -->
-    <h1>Welcome</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ut nam quaerat assumenda id temporibus, reiciendis cupiditate laborum qui fugit soluta animi ratione ducimus, modi vel repellat fugiat fuga magni nostrum? Quibusdam est quisquam distinctio optio, eum recusandae quidem quas natus nobis quam consectetur a nihil possimus, ipsum odio molestias ad earum rerum odit, velit consequuntur. Repellat, nostrum ex eius.</p>
->>>>>>> develop
-
-    <!--    inc footer.html -->
-
+<!-- Include footer -->
+@@include('inc/footer.html')
 </body>
-@@include('./inc/footer.html');
 
 </html>

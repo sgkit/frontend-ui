@@ -1,0 +1,35 @@
+///*** Created by shawnsandy on 10/2/14. *///
+
+.ui-nav() {
+
+
+  nav
+  {
+
+    &:extend(.navbar);
+
+    &.top {
+      &:extend(.navbar-fixed-top all);
+    }
+
+    .brand {
+      &:extend(.navbar-brand);
+    }
+
+    .bar:extend(.navbar-nav all){
+
+
+    }
+
+    .toggle:extend(.navbar-toggle all){
+
+       .fa {
+        .font-size(@medium);
+      }
+
+    }
+
+  }
+
+
+}

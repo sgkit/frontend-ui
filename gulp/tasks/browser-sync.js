@@ -2,20 +2,30 @@
 
 var config = require('../config.json').browserSync,
     gulp = require('gulp'),
-    browsersync = require('browser-sync');
+  notify = require('gulp-notify'),
+    browserSync = require('browser-sync');
 
 
 
-gulp.task('browser-sync', ["layout-watch"], function () {
-    
-    browsersync({
+gulp.task('browser-sync', function () {
+
+    browserSync({
       server: {
         baseDir: config.baseDir,
         index: config.indexPage
     },
     files: [config.files],
     logLevel: config.logLevel,
-    timestamp: config.timestamp  
+    timestamp: config.timestamp
     })
-    
+
 })
+
+gulp.task('browser-sync:notify',function(){
+  gulp.src(config.baseDir + '/index.html')
+    .pipe(notify('BROWSER-SYNC : Reloading browser(s)'));
+})
+
+gulp.task('browser-sync:reload', function () {
+  browserSync.reload();
+});

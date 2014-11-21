@@ -1,0 +1,30 @@
+#ui > header, [role="header"] {
+  //height: @header-height / 2;
+  height: @header-min-height;
+  min-height: @header-min-height;
+  text-align: center;
+  background-color: @header-bg-color;
+  color: @header-color;
+  padding: 0;
+  padding-bottom: @nav-height;
+  box-sizing: border-box;
+  .home & {
+    height: @header-height;
+  }
+
+  h1 {
+    //.font-size()
+    .lh-transition(all 0.5s ease);
+
+    &:hover {
+      color: @darkgray;
+    }
+  }
+  .vtable {
+    .vtable();
+    .table-cell {
+      .table-cell();
+    }
+  }
+
+}

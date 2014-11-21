@@ -1,0 +1,64 @@
+.page(){
+
+  body {
+    height: 100% !important;
+    font-family: @font-family;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  #ui {
+    color: @font-color;
+    padding-top: 0;
+    &.padding{
+      padding-top: @nav-height;
+    }
+
+  }
+
+  h1,h2,h3,h4,h5 {
+    font-family:@font-family;
+    line-height: 1.5;
+    //  margin-top: 10;
+    //  margin-top: 1.0rem;
+
+
+    aside &  {
+      //    line-height: 1.2;
+
+      margin-bottom: 20px;
+      &:extend(h1);
+    }
+
+
+  }
+
+  p {
+    .lh-justify-content(flex-end);
+  }
+
+
+  #ui, div[role="page"] {
+    & > header,
+    & > main,
+    & > section,
+    & > footer {
+      padding-top: @nav-height;
+
+    }
+
+  }
+
+
+  figure {
+    margin-bottom: @margins;
+    display: block;
+  }
+
+  .navbar-toggle .fa {
+    .font-size(1.6);
+  }
+
+  .ccode {
+    cursor: pointer;
+  }
+}

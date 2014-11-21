@@ -3,37 +3,30 @@ var config = require('../config.json').layouts;
 var gulp = require('gulp'),
     util = require('gulp-util'),
     notify = require('gulp-notify'),
-    watch = require('watchify');
+    browserSync = require('browser-sync'),
+    fileinclude = require('gulp-file-include');
 
 
+gulp.task('include_layouts', function () {
 
-<<<<<<< HEAD
-=======
-    gulp.src(config.src + config.srcFiles, {
+    gulp.src( config.srcFiles, {
         base: config.src
     })
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
         }))
+      .pipe(notify('Your layout files have been generated'))
         .pipe(gulp.dest(config.dest));
 });
->>>>>>> develop
 
-gulp.task('layout-watch', function () {
-    gulp.watch([config.dir + '**.html', config.inc_dir + '**/*.html'], ['layout']);
+gulp.task('layout:watch', ['browser-sync'],  function () {
+    gulp.watch([config.srcFiles, config.inc], ['include_layouts', 'browser-sync:reload','browser-sync:notify'])
 
 });
 
-<<<<<<< HEAD
-gulp.task('layout', ["fileinclude"], function () {
-
-    gulp.src("src/index.html")
-        .pipe(notify("Your layout files have been generated"));
-=======
-gulp.task('layout', ['include_layouts'], function () {
->>>>>>> develop
+gulp.task('layout', ['include_layouts','browser-sync'], function () {
 
     gulp.src(config.src + '/index.html')
-        .pipe(notify('Your layout files have been generated'));
+        .pipe(notify('Watching your layout files'));
 });
