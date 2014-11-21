@@ -850,7 +850,6 @@ fieldset[disabled] .navbar-inverse #ui .link:focus {
 /* mixins
 use full theme mixins
 */
-/* Created by shawnsandy on 11/21/14. */
 #ui.items {
   display: -webkit-box;
   display: -webkit-flex;

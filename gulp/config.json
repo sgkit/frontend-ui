@@ -24,11 +24,11 @@
   "browserSync": {
     "baseDir": "./src",
     "files": [
-      "./src/*.html",
-      "./src/inc/**.html",
-      "./src/ui/components/**/*.html",
-      "./src/ui/elements/**/*.html",
-      "./src/assets/**/*.css"
+      "/*.html",
+      "/inc/**.html",
+      "/ui/components/**/*.html",
+      "/ui/elements/**/*.html",
+      "/assets/**/*.css"
     ],
     "proxy": "",
     "port": "8000",
