@@ -21,7 +21,7 @@ gulp.task('include_layouts', function () {
 });
 
 gulp.task('layout:watch', ['browser-sync'],  function () {
-    gulp.watch([config.layouts.srcFiles], ['include_layouts', 'browser-sync:notify'])
+    gulp.watch(config.layouts.srcFiles, ['include_layouts', 'browser-sync:notify'])
 
 });
 
