@@ -17,9 +17,11 @@
       "src/layouts/*.html",
       "src/layouts/admin/**/*.html",
       "src/ui/**/*.html"
+
     ],
     "srcCss": [
-      "src/assets/css/**/*.css"
+      "src/assets/css/**/*.css",
+      "src/layouts/inc/*.html"
     ],
     "dest": "./src/",
     "notification": true,
