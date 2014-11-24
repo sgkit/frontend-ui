@@ -2,9 +2,9 @@
 <html class="no-js">
 <head>
   <!--inc header.html -->
-  <script src="package/platform/platform.js" ></script>
-<!--<script src="package/webcomponentsjs/webcomponents.js" ></script>-->
-<link rel="import" href="ui/components/page-cover.html"/>
+  <!--<script src="package/platform/platform.js" ></script>-->
+<script src="web-components/package/webcomponentsjs/webcomponents.js" ></script>
+<link rel="import" href="web-components/page-cover.html"/>
 
   <meta charset="utf-8">
 <title></title>
@@ -60,7 +60,8 @@
 
 </head>
 <body class="home" unresolved="">
-<div id="ui">
+
+<div id="ui" class="">
   <header class="items center">
     <div>
       <h1>Foluke</h1>
@@ -79,7 +80,11 @@
       <page-cover title="Hello World"></page-cover>
     </div>
   </section>
+  <footer>
+    <p>Copy Info</p>
+  </footer>
 </div>
+
 <!-- Include footer -->
 <script src="/assets/js/vendor/jquery-2.1.0.min.js"></script>
 <script src="/package/bootstrap/dist/js/bootstrap.min.js"></script>
