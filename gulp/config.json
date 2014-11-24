@@ -10,14 +10,12 @@
     "srcFiles": [
       "src/layouts/*.html",
       "src/layouts/admin/**/*.html",
-      "src/assets/css/**/*.css",
-      "src/ui/**/*.html"
+      "src/assets/css/**/*.css"
     ],
     "srcHtml": [
       "src/layouts/*.html",
       "src/layouts/admin/**/*.html",
       "src/ui/**/*.html"
-
     ],
     "srcCss": [
       "src/assets/css/**/*.css",
