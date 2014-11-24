@@ -3,7 +3,7 @@
 * Bootstrap UI
 * Semantic bootstrap
 *
-*******************/
+*********/
 @media print {
   #ui p {
     orphans: 3;
@@ -850,6 +850,20 @@ fieldset[disabled] .navbar-inverse #ui .link:focus {
 /* mixins
 use full theme mixins
 */
+#ui.items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#ui.items.center {
+  flex-flow: row nowrap;
+  flex-direction: row ;
+  flex-wrap: nowrap ;
+  justify-content: center ;
+  align-content: center ;
+  align-items: center ;
+}
 .bootui .contain {
   margin-right: auto;
   margin-left: auto;

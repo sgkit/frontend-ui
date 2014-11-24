@@ -44,9 +44,7 @@
         <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
         -->
 
-
 <!--core core stuff-->
-
 <link rel="stylesheet" href="assets/css/normalize.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <script src="assets/js/vendor/modernizr-2.7.1.min.js"></script>
@@ -55,10 +53,13 @@
 <link rel="stylesheet" href="assets/css/stylesheet.css"/>
 <link rel="stylesheet" href="assets/css/bootui.css"/>
 
+
+
 </head>
 
 <body>
-<div class="ui">
+<div id="ui" class="padding">
+
     <div class="contain">
         <!-- Add your site or application content here -->
         <h1>Welcome</h1>
@@ -68,9 +69,10 @@
     </div>
 </div>
 
-<script src="assets/js/vendor/jquery-2.1.0.min.js"></script>
-<script src="assets/js/helper.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/vendor/jquery-2.1.0.min.js"></script>
+<script src="/package/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/js/helper.js"></script>
+<script src="/assets/js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <!--<script>-->
   <!--(function (b, o, i, l, e, r) {-->

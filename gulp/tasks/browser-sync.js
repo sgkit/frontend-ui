@@ -11,11 +11,9 @@ gulp.task('browser-sync', function () {
 
     browserSync({
       server: {
-        baseDir: config.baseDir,
-        index: config.indexPage
+        baseDir: config.baseDir
     },
     files: [config.files],
-    logLevel: config.logLevel,
     timestamp: config.timestamp
     })
 
