@@ -13,6 +13,14 @@
       "src/assets/css/**/*.css",
       "src/ui/**/*.html"
     ],
+    "srcHtml": [
+      "src/layouts/*.html",
+      "src/layouts/admin/**/*.html",
+      "src/ui/**/*.html"
+    ],
+    "srcCss": [
+      "src/assets/css/**/*.css"
+    ],
     "dest": "./src/",
     "notification": true,
     "inc": "src/layouts/inc/*.html",
