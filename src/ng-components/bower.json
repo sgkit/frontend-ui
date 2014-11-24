@@ -1,0 +1,29 @@
+{
+  "name": "ng-components",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sgkit/frontend-ui",
+  "authors": [
+    "shawnsandy <shawnsandy04@gmail.com>"
+  ],
+  "description": "Foluke/ng-components",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "Angular",
+    "components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "package/",
+    "test",
+    "tests"
+  ]
+}
