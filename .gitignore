@@ -3,3 +3,4 @@ node_modules
 src/package/**/*.*
 src/ui/components/package
 ui
+src/web-components/package
