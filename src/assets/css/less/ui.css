@@ -1910,6 +1910,15 @@ body {
   font-size: 26px;
   font-size: 2.6rem;
 }
+#ui nav .fifty.navbar-brand,
+#ui nav .fifty.navbar-nav li a,
+#ui nav .fifty.brand,
+#ui nav .fifty.bar li a,
+#ui nav .fifty#ui nav .bar li a {
+  line-height: 50px;
+  height: 50px;
+  padding-top: 0;
+}
 #ui .navbar-toggle .fa,
 #ui #ui nav .toggle .fa {
   font-size: 26px;

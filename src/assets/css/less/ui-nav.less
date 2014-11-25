@@ -3,8 +3,7 @@
 .ui-nav() {
 
 
-  nav
-  {
+
 
     &:extend(.navbar);
 
@@ -29,7 +28,23 @@
 
     }
 
+
+
   }
+
+
+
+.nav-height(@height: 50px) {
+.fifty {
+  &.navbar-brand,
+  &.navbar-nav li a,
+  &.brand,
+  &.bar li a {
+    line-height: @height;
+    height: @height;
+    padding-top: 0;
+  }
+}
 
 
 }
