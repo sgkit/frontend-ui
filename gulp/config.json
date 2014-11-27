@@ -35,13 +35,11 @@
     "baseDir": "./src",
     "files": [
       "./src/*.html",
-      "./src/inc/**.html",
+      "./src/layouts/inc/**.html",
       "./src/ui/components/**/*.html",
       "./src/web-components/**/*.html",
       "./src/ng-components/**/*.html",
-      "./src/ui/elements/**/*.html",
-      "./src/assets/**/*.css",
-      "./src/ui/**/*.html"
+      "./src/assets/**/*.css"
     ],
     "proxy": "",
     "port": "8000",

@@ -2,49 +2,40 @@
 
 .ui-nav() {
 
+  &:extend(.navbar);
 
+  &.top {
+    &:extend(.navbar-fixed-top all);
+  }
 
+  .brand {
+    &:extend(.navbar-brand);
+  }
 
-    &:extend(.navbar);
-
-    &.top {
-      &:extend(.navbar-fixed-top all);
-    }
-
-    .brand {
-      &:extend(.navbar-brand);
-    }
-
-    .bar:extend(.navbar-nav all){
-
-
-    }
-
-    .toggle:extend(.navbar-toggle all){
-
-       .fa {
-        .font-size(@medium);
-      }
-
-    }
-
-
+  .bar:extend(.navbar-nav all) {
 
   }
 
+  .toggle:extend(.navbar-toggle all) {
 
+    .fa {
+      .font-size(@medium);
+    }
 
-.nav-height(@height: 50px) {
-.fifty {
-  &.navbar-brand,
-  &.navbar-nav li a,
-  &.brand,
-  &.bar li a {
-    line-height: @height;
-    height: @height;
-    padding-top: 0;
   }
+
 }
 
+.nav-height(@height: 50px) {
+  .fifty {
+    &.navbar-brand,
+    &.navbar-nav li a,
+    &.brand,
+    &.bar li a {
+      line-height: @height;
+      height: @height;
+      padding-top: 0;
+    }
+  }
 
 }
