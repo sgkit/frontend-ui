@@ -3,6 +3,7 @@ var config = require('../config.json');//.layouts;
 var gulp = require('gulp'),
     util = require('gulp-util'),
     notify = require('gulp-notify'),
+    changed = require('gulp-changed'),
     fileinclude = require('gulp-file-include');
 
 
@@ -19,9 +20,10 @@ gulp.task('include_layouts', function () {
         .pipe(gulp.dest(config.layouts.dest));
 });
 
-gulp.task('layout:watch', ['browser-sync'],  function () {
+gulp.task('layout:watch', ['browser-sync'],function () {
     gulp.watch(config.layouts.srcCss, ['browser-sync:notify'])
-    gulp.watch(config.layouts.srcHtml, ['include_layouts', 'browser-sync:notify'])
+    gulp.watch(config.layouts.srcHtml, ['include_layouts', 'browser-sync:reload', 'browser-sync:notify'])
+    //gulp.watch(['./src/*.html', './src/pages/*.html'],['browser-sync'])
 });
 
 gulp.task('layout', ['include_layouts','browser-sync'], function () {

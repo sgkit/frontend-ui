@@ -20,7 +20,7 @@ gulp.task('browser-sync', function () {
 })
 
 gulp.task('browser-sync:notify',function(){
-  gulp.src(config.baseDir + '/index.html')
+  gulp.src(config.baseDir + '/*.html')
     .pipe(notify('BROWSER-SYNC : Reloading browser(s)'));
 })
 
