@@ -14,7 +14,7 @@
     ],
     "srcHtml": [
       "src/layouts/*.html",
-      "src/layouts/admin/**/*.html", //some comment
+      "src/layouts/admin/**/*.html",
       "src/web-components/*.html"
     ],
     "srcCss": [
