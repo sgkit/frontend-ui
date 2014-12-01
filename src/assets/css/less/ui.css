@@ -5,10 +5,6 @@
 *
 *********/
 @media print {
-  #ui p {
-    orphans: 3;
-    widows: 3;
-  }
   #ui nav {
     display: none;
   }
@@ -23,12 +19,6 @@
   display: block;
   max-width: 100%;
   height: auto;
-}
-#ui p {
-  margin: 0 0 10px;
-}
-blockquote #ui p:last-child {
-  margin-bottom: 0;
 }
 .bootui .row {
   margin-left: -15px;
@@ -738,11 +728,6 @@ fieldset[disabled] .navbar-inverse #ui .link:focus {
 #ui .label.danger[href]:focus {
   background-color: #c9302c;
 }
-.jumbotron #ui p {
-  margin-bottom: 15px;
-  font-size: 21px;
-  font-weight: 200;
-}
 #ui .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -756,12 +741,10 @@ fieldset[disabled] .navbar-inverse #ui .link:focus {
 #ui .alert .alert-link {
   font-weight: bold;
 }
-.alert > #ui p,
 #ui .alert > p,
 #ui .alert > ul {
   margin-bottom: 0;
 }
-.alert > #ui p + #ui p,
 #ui .alert > p + p {
   margin-top: 5px;
 }
@@ -884,8 +867,7 @@ use full theme mixins
 }
 .bootui p,
 .bootui aside,
-.bootui label,
-.bootui #ui p {
+.bootui label {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -2011,8 +1993,7 @@ footer h1 {
   font-size: 1.6rem;
   font-weight: bolder;
 }
-p,
-#ui p {
+p {
   font-size: 16px;
   font-size: 1.6rem;
 }

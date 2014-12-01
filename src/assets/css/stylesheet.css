@@ -1,5 +1,5 @@
 /* ==========================================================================
-   theme styles
+   theme styles v 0.1.1
    ========================================================================== */
 /* navbars */
 /* navbars */
@@ -7,56 +7,7 @@
 use full theme mixins
 */
 /* sg-fonts font mixins */
-/* --- forms update  --- */
-.input-group {
-  margin-bottom: 10px;
-}
-/* ---- header ---- */
-#ui > header,
-[role="header"] {
-  height: 280px;
-  min-height: 280px;
-  text-align: center;
-  background-color: #f2f2f2;
-  color: #808080;
-  padding: 0;
-  padding-bottom: 100px;
-  box-sizing: border-box;
-}
-.home #ui > header,
-.home [role="header"] {
-  height: 380px;
-}
-#ui > header h1,
-[role="header"] h1 {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-#ui > header h1:hover,
-[role="header"] h1:hover {
-  color: #222222;
-}
-#ui > header .vtable,
-[role="header"] .vtable {
-  display: table;
-  height: inherit !important;
-  width: 100% !important;
-}
-#ui > header .vtable .table-cell,
-[role="header"] .vtable .table-cell {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
-}
-#ui > header .vtable .table-cell,
-[role="header"] .vtable .table-cell {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
-}
-/********************** page update ***********************/
+/* --- page update --- */
 body {
   height: 100% !important;
   font-family: 'OpenSansRegular', Arial, sans-serif;
@@ -117,6 +68,72 @@ figure {
 .ccode {
   cursor: pointer;
 }
+#top-link {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 36px;
+  padding: 10px;
+}
+#top-link a {
+  color: #808080;
+}
+.btn {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* --- forms update  --- */
+.input-group {
+  margin-bottom: 10px;
+}
+/* ---- header ---- */
+#ui > header,
+[role="header"] {
+  height: 280px;
+  min-height: 280px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #808080;
+  padding: 0;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+.home #ui > header,
+.home [role="header"] {
+  height: 380px;
+}
+#ui > header h1,
+[role="header"] h1 {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#ui > header h1:hover,
+[role="header"] h1:hover {
+  color: #222222;
+}
+#ui > header .vtable,
+[role="header"] .vtable {
+  display: table;
+  height: inherit !important;
+  width: 100% !important;
+}
+#ui > header .vtable .table-cell,
+[role="header"] .vtable .table-cell {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+#ui > header .vtable .table-cell,
+[role="header"] .vtable .table-cell {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
 /* --- footer --- */
 footer .footer .copy-info {
   padding: 20px;
@@ -170,20 +187,3 @@ article .author .avatar {
   background-color: #222222;
 }
 /* --- page elements --- */
-#top-link {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  z-index: 9999;
-  font-size: 36px;
-  padding: 10px;
-}
-#top-link a {
-  color: #808080;
-}
-.btn {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}

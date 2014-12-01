@@ -1,3 +1,4 @@
+/* ver 0.1.1 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6297,10 +6298,6 @@ use full theme mixins
 *
 *********/
 @media print {
-  #ui p {
-    orphans: 3;
-    widows: 3;
-  }
   #ui nav {
     display: none;
   }
@@ -6315,12 +6312,6 @@ use full theme mixins
   display: block;
   max-width: 100%;
   height: auto;
-}
-#ui p {
-  margin: 0 0 10px;
-}
-blockquote #ui p:last-child {
-  margin-bottom: 0;
 }
 .bootui .row {
   margin-left: -15px;
@@ -7030,11 +7021,6 @@ fieldset[disabled] .navbar-inverse #ui .link:focus {
 #ui .label.danger[href]:focus {
   background-color: #c9302c;
 }
-.jumbotron #ui p {
-  margin-bottom: 15px;
-  font-size: 21px;
-  font-weight: 200;
-}
 #ui .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -7048,12 +7034,10 @@ fieldset[disabled] .navbar-inverse #ui .link:focus {
 #ui .alert .alert-link {
   font-weight: bold;
 }
-.alert > #ui p,
 #ui .alert > p,
 #ui .alert > ul {
   margin-bottom: 0;
 }
-.alert > #ui p + #ui p,
 #ui .alert > p + p {
   margin-top: 5px;
 }
@@ -7176,8 +7160,7 @@ use full theme mixins
 }
 .bootui p,
 .bootui aside,
-.bootui label,
-.bootui #ui p {
+.bootui label {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -8303,8 +8286,7 @@ footer h1 {
   font-size: 1.6rem;
   font-weight: bolder;
 }
-p,
-#ui p {
+p {
   font-size: 16px;
   font-size: 1.6rem;
 }
@@ -8326,7 +8308,7 @@ p,
 }
 
 /* ==========================================================================
-   theme styles
+   theme styles v 0.1.1
    ========================================================================== */
 /* navbars */
 /* navbars */
@@ -8334,56 +8316,7 @@ p,
 use full theme mixins
 */
 /* sg-fonts font mixins */
-/* --- forms update  --- */
-.input-group {
-  margin-bottom: 10px;
-}
-/* ---- header ---- */
-#ui > header,
-[role="header"] {
-  height: 280px;
-  min-height: 280px;
-  text-align: center;
-  background-color: #f2f2f2;
-  color: #808080;
-  padding: 0;
-  padding-bottom: 100px;
-  box-sizing: border-box;
-}
-.home #ui > header,
-.home [role="header"] {
-  height: 380px;
-}
-#ui > header h1,
-[role="header"] h1 {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-#ui > header h1:hover,
-[role="header"] h1:hover {
-  color: #222222;
-}
-#ui > header .vtable,
-[role="header"] .vtable {
-  display: table;
-  height: inherit !important;
-  width: 100% !important;
-}
-#ui > header .vtable .table-cell,
-[role="header"] .vtable .table-cell {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
-}
-#ui > header .vtable .table-cell,
-[role="header"] .vtable .table-cell {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
-}
-/********************** page update ***********************/
+/* --- page update --- */
 body {
   height: 100% !important;
   font-family: 'OpenSansRegular', Arial, sans-serif;
@@ -8444,6 +8377,72 @@ figure {
 .ccode {
   cursor: pointer;
 }
+#top-link {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 36px;
+  padding: 10px;
+}
+#top-link a {
+  color: #808080;
+}
+.btn {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* --- forms update  --- */
+.input-group {
+  margin-bottom: 10px;
+}
+/* ---- header ---- */
+#ui > header,
+[role="header"] {
+  height: 280px;
+  min-height: 280px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #808080;
+  padding: 0;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+.home #ui > header,
+.home [role="header"] {
+  height: 380px;
+}
+#ui > header h1,
+[role="header"] h1 {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#ui > header h1:hover,
+[role="header"] h1:hover {
+  color: #222222;
+}
+#ui > header .vtable,
+[role="header"] .vtable {
+  display: table;
+  height: inherit !important;
+  width: 100% !important;
+}
+#ui > header .vtable .table-cell,
+[role="header"] .vtable .table-cell {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+#ui > header .vtable .table-cell,
+[role="header"] .vtable .table-cell {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
 /* --- footer --- */
 footer .footer .copy-info {
   padding: 20px;
@@ -8497,21 +8496,4 @@ article .author .avatar {
   background-color: #222222;
 }
 /* --- page elements --- */
-#top-link {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  z-index: 9999;
-  font-size: 36px;
-  padding: 10px;
-}
-#top-link a {
-  color: #808080;
-}
-.btn {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
