@@ -20,8 +20,9 @@ gulp.task('include_layouts', function () {
 });
 
 gulp.task('layout:watch', ['browser-sync'],  function () {
-    gulp.watch(config.layouts.srcCss, ['browser-sync:notify'])
+
     gulp.watch(config.layouts.srcHtml, ['include_layouts', 'browser-sync:notify'])
+    gulp.watch(config.layouts.srcCss, ['browser-sync:notify'])
 });
 
 gulp.task('layout', ['include_layouts','browser-sync'], function () {
